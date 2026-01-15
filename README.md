@@ -22,6 +22,7 @@
 - MEDIC means MEDIC of organization level.
 - EXTERNAL means EXTERNAL of organization level.
 - As the project got worked so many times with logics, its expected to see legacy fields in schems which are kept for old data compability and will be removed in future on database gets reset.
+- PATIENT does not have web dashborad access. Alhough we can invite, edit patient from System, organization dashborad, Patient cant login in the web dashboard. (Patient login, dashboard is limited to mobile)
 
 ## ER Diagram (As relation, domain objects are extracted using AI, some of them might not be correct, hence mix of Er and md files is good way to explore)
 
