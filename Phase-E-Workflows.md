@@ -416,7 +416,7 @@
 ## WORKFLOW 9: Update Own Profile
 
 **Name:** User Updates Own Profile  
-**Actors:** SYSTEM_ADMIN, SUPER_ADMIN, ADMIN, MODERATOR, MEDIC, PATIENT, EXTERNAL  
+**Actors:** SYSTEM_ADMIN (SUPER_ADMIN, ADMIN, MODERATOR), SUPER_ADMIN (Organization), ADMIN(Organization), MODERATOR(Organization), MEDIC(Organization), EXTERNAL(Organization)  
 **Trigger:** Any authenticated user updates own profile
 
 **UI Components:**
@@ -431,7 +431,7 @@
 
 **Steps:**
 
-1. **UI:** Any authenticated user (SYSTEM_ADMIN, SUPER_ADMIN, ADMIN, MODERATOR, MEDIC, PATIENT, EXTERNAL) navigates to `/profile`
+1. **UI:** Any authenticated user (SYSTEM_ADMIN (SUPER_ADMIN, ADMIN, MODERATOR), SUPER_ADMIN (Organization), ADMIN(Organization), MODERATOR(Organization), MEDIC(Organization), EXTERNAL(Organization)) navigates to `/profile`
 2. **UI:** `ProfilePage` displays:
    - Profile picture (with edit overlay)
    - Basic Information section with tabs
@@ -1884,7 +1884,7 @@
 ## WORKFLOW 42: Account Settings Management
 
 **Name:** Manage Account Settings (Password, Sessions, Delete Account)  
-**Actors:** SYSTEM_ADMIN, SUPER_ADMIN, ADMIN, MODERATOR, MEDIC, PATIENT, EXTERNAL  
+**Actors:** SYSTEM_ADMIN (SUPER_ADMIN, ADMIN, MODERATOR), SUPER_ADMIN (Organization), ADMIN(Organization), MODERATOR(Organization), MEDIC(Organization), EXTERNAL(Organization)  
 **Trigger:** Any authenticated user accesses settings page
 
 **UI Components:**
@@ -1899,7 +1899,7 @@
 
 **Steps:**
 
-1. **UI:** Any authenticated user (SYSTEM_ADMIN, SUPER_ADMIN, ADMIN, MODERATOR, MEDIC, PATIENT, EXTERNAL) navigates to `/setting`
+1. **UI:** Any authenticated user (SYSTEM_ADMIN (SUPER_ADMIN, ADMIN, MODERATOR), SUPER_ADMIN (Organization), ADMIN(Organization), MODERATOR(Organization), MEDIC(Organization), EXTERNAL(Organization)) navigates to `/setting`
 2. **UI:** `SettingsPage` displays `SettingsTabs.tsx` with tabs:
    - **Security Settings:**
      - Change Password button (opens `ChangePasswordModal.tsx`)
@@ -1955,7 +1955,7 @@
 ## WORKFLOW 43: Submit Support Request
 
 **Name:** Submit Support/Contact Form  
-**Actors:** SYSTEM_ADMIN, SUPER_ADMIN, ADMIN, MODERATOR, MEDIC, PATIENT, EXTERNAL  
+**Actors:** SYSTEM_ADMIN (SUPER_ADMIN, ADMIN, MODERATOR), SUPER_ADMIN (Organization), ADMIN(Organization), MODERATOR(Organization), MEDIC(Organization), EXTERNAL(Organization)  
 **Trigger:** Any authenticated user submits support form
 
 **Steps:**
